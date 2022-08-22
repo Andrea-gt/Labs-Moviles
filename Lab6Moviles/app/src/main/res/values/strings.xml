@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Lab6</string>
+    <string name="home_text">Good morning,</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_name">Andrea Ximena</string>
+    <string name="topGenres">Your top genres</string>
+    <string name="seachText">Search</string>
+    <string name="rock">Rock</string>
+    <string name="pop">Pop</string>
+    <string name="indie">Indie</string>
+    <string name="hiphop">Hip-hop</string>
+    <string name="yourLibrary">Your Library</string>
+    <string name="likedSongs">Liked Songs</string>
+    <string name="likedSongsAmount">0</string>
+    <string name="mostRecent">Most recent</string>
+</resources>

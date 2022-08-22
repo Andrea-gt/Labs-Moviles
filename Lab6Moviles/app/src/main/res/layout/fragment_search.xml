@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/SpotifyBlack"
+    tools:context=".SearchFragment">
+
+    <TextView
+        android:id="@+id/Search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/seachText"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TopGenres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_light"
+        android:text="@string/topGenres"
+        android:textColor="@color/white"
+        android:textSize="@dimen/generalText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Search"
+        app:layout_constraintTop_toBottomOf="@+id/Search" />
+
+
+    <TextView
+        android:id="@+id/Rock"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="50dp"
+        android:background="@drawable/rectangle_sample"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/rock"
+        android:textColor="@color/white"
+        android:textSize="@dimen/generalText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TopGenres" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/rectangle_sample2"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/pop"
+        android:textColor="@color/white"
+        android:textSize="@dimen/generalText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Rock"
+        app:layout_constraintTop_toBottomOf="@+id/TopGenres" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangle_sample3"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/indie"
+        android:textColor="@color/white"
+        android:textSize="@dimen/generalText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Rock" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:background="@drawable/rectangle_sample4"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/hiphop"
+        android:textColor="@color/white"
+        android:textSize="@dimen/generalText"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

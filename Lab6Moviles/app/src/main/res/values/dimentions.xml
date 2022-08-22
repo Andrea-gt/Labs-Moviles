@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_homeText">26sp</dimen>
+    <dimen name="dimen_name">20sp</dimen>
+    <dimen name="generalText">14sp</dimen>
+</resources>
