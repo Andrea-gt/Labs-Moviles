@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Laboratorio7</string>
+    <string name="main_Text">Laboratorio 7</string>
+    <string name="main_InputText">Ingresa tu correo</string>
+    <string name="main_NeedUser">¿Nuevo usuario? ¡Crea tu cuenta aqui!</string>
+    <string name="mainButtonText">Iniciar sesion</string>
+    <string name="newUserText">Nueva Cuenta</string>
+    <string name="createUserButtonText">Crear Usuario</string>
+    <string name="homeMainText">¡Buenos dias!</string>
+    <string name="updateRequirement">Necesitamos que actualices tu perfil</string>
+    <string name="updateProfile">Actualizar Perfil</string>
+    <string name="profileMainText">Mi Perfil</string>
+    <string name="updateMailProfile">Actualizar</string>
+
+</resources>
