@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
@@ -29,7 +30,12 @@ class LoginFragment : Fragment(R.layout.fragment_login){
             val action = LoginFragmentDirections.actionLoginFragmentToHomeFragment(
                 userEmail = emailInput.editableText!!.toString()
             )
-            requireView().findNavController().navigate(action)
+            if(emailInput.editableText!!.toString() =="jcdurini@uvg.edu.gt") {
+                requireView().findNavController().navigate(action)
+            }
+            else{
+                Toast.makeText(this.getContext(), "El correo no existe" , Toast.LENGTH_SHORT ).show();
+            }
         }
         buttonCreate.setOnClickListener {
             requireView().findNavController().navigate(R.id.action_loginFragment_to_newAccountFragment)
