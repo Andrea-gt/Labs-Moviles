@@ -26,7 +26,10 @@ class HomeFragment : Fragment(R.layout.fragment_home){
     }
     private fun setListeners() {
         buttonProfile.setOnClickListener {
-            requireView().findNavController().navigate(R.id.action_homeFragment_to_profileFragment)
+            val action = HomeFragmentDirections.actionHomeFragmentToProfileFragment(
+                profileEmail = args.userEmail
+            )
+            requireView().findNavController().navigate(action)
         }
     }
 }

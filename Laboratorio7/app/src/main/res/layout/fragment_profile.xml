@@ -37,7 +37,7 @@
         android:drawableStart="@drawable/ic_at"
         android:layout_height="wrap_content"
         android:background="@drawable/main_editext_style"
-        android:text="correo"
+        android:hint="correo"
         android:textColor="@color/InputGrey"
         android:textSize="@dimen/generalText"
         android:layout_marginTop="@dimen/MarginFour"
