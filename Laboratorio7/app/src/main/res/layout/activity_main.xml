@@ -6,54 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/mainactivity_MainText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/main_Text"
-        android:textSize="@dimen/main_TextDimension"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainer_mainActivity"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph"
+
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.40" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/mainInput_EditText"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/main_editext_style"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:text="@string/main_InputText"
-        android:textColor="@color/InputGrey"
-        android:textSize="@dimen/generalText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mainactivity_MainText"/>
-
-    <TextView
-        android:id="@+id/mainactivity_NeedUserText"
-        android:layout_marginTop="@dimen/MarginOne"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/main_NeedUser"
-        android:textColor="@color/MessageBlue"
-        android:textSize="@dimen/generalText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mainInput_EditText" />
-
-    <Button
-        android:id="@+id/LoginButton"
-        android:layout_width="wrap_content"
-        android:layout_marginTop="@dimen/MarginOne"
-        android:textSize="@dimen/generalText"
-        android:backgroundTint="@color/RoseDust"
-        android:layout_height="wrap_content"
-        android:text="@string/mainButtonText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mainactivity_NeedUserText" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
